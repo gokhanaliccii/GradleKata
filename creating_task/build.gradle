@@ -1,0 +1,12 @@
+task parent << {
+ 
+println "parent"
+}
+
+parent.dependsOn 'child'
+
+task child << {
+
+ println "child"
+}
+
